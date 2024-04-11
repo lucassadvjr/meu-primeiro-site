@@ -1,0 +1,190 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.logo {
+    max-height: 10%; /* Define a altura máxima da logo para 10% da altura da tela */
+}
+/* Estilos Globais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9; /* Fundo levemente cinza */
+}
+
+/* Estilos para Dispositivos Móveis */
+@media (max-width: 768px) {
+    .logo {
+        max-height: 10%;
+    }
+    .imagemsite {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+}
+
+/* Estilos para Desktop */
+@media (min-width: 769px) {
+    .logo {
+        max-height: 5%;
+    }
+    .imagemsite {
+        width: 50%;
+        height: 5%;
+        border-radius: 10px;
+    }
+    #robo{max-width: 100%; max-height: auto;}
+}
+/* IMAGEM CABEÇALHO*/
+.cabecalho {
+    background: linear-gradient(to bottom, #f00b0b, #faf6f6); /* Gradiente rosa */
+    color: #fff; /* Texto branco */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribui os elementos horizontalmente */
+    font-size: 2rem; /* Tamanho de fonte maior */
+    padding: 20px; /* Espaçamento interno */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estilos para o Campo de Pesquisa */
+.search-box {
+    display: flex;
+    align-items: center;
+    margin-left: 40%; /* Empurra o campo de pesquisa para a direita */
+    margin-top: -8; /* Ajusta a distância entre o logo e o campo de pesquisa */
+}
+
+.search-box input[type="search"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.search-box button {
+    padding: 10px 20px;
+    background-color: #f70404;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background-color: #fd0505; /* Altera a cor ao passar o mouse */
+}
+
+
+/* Estilos para o Cabeçalho */
+header, .cabecalho {
+    background: linear-gradient(to bottom, #f00b0b, #faf6f6); /* Gradiente rosa */
+    color: #fff; /* Texto branco */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem; /* Tamanho de fonte maior */
+    padding: 2rem 0; /* Mais espaço no cabeçalho */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estilos para o Rodapé */
+footer {
+    background: linear-gradient(to bottom, #faf6f6, #f00b0b); /* Gradiente rosa */
+    color: #fff; /* Texto branco */
+    width: 100%;
+    text-align: left;
+    padding: 2rem 0; /* Mais espaço no rodapé */
+}
+
+/* Estilos para Títulos */
+h1 {
+    font-size: 4rem; /* Tamanho de fonte maior */
+    text-align: center;
+    color: #fd0505; /* Rosa */
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5); /* Sombra sutil */
+    margin: 2rem 0; /* Mais espaço entre os títulos */
+}
+
+h2 {color: #f70404; /* cor de destaque */
+    font-size: 2.5rem auto; /* Tamanho de fonte maior */
+    margin: 1.5rem 0; /* Mais espaço entre os títulos */
+}
+
+h5 {
+    font-size: 2rem; /* Tamanho de fonte maior */
+    color: #f00b0b; /* Rosa */
+    text-align: center;
+    margin: 1.5rem 0; /* Mais espaço entre os subtítulos */
+}
+h6 {text-align: center;} /* texto da promo no centro*/
+
+/* Estilos para Parágrafos */
+p {text-align: center;
+    margin: 1rem 0;
+    font-size: 1.6rem; /* Tamanho de fonte maior */
+    color: #333; /* Texto mais escuro */
+}
+
+/* Estilos para Figuras */
+figure {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+/* Estilos para Conteúdos */
+.conteudo1, .conteudotopo {
+    margin: 0 auto;
+    padding: 2rem; /* Mais espaço entre os conteúdos */
+    font-size: 1.8rem; /* Tamanho de fonte maior */
+    text-align: justify;
+    max-width: 100%;
+}
+
+/* Estilos para a Grade */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 2rem auto; /* Mais espaço entre os elementos da grade */
+    border-radius: 11px;
+}
+
+.grid div {
+    background-color: #f83939; /* Amarelo claro */
+    text-align: center;
+    padding: 2rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Adiciona uma animação de transição */
+}
+
+.grid div:hover {
+    transform: translateY(-5px); /* Animação de levantar suavemente ao passar o mouse */
+}
+
+/* Estilos para o Box de Cores */
+#caixac {
+    color: #f70404; /* Rosa */
+    width: 150px;
+    position: fixed;
+    right: 0;
+    text-align: center;
+    margin-top: 6rem; /* Mais espaço entre o box e o topo */
+    z-index: 1;
+}
+
+/* Estilos para o Formulário */
+#formulario {
+    color: #333; /* Texto mais escuro */
+}
+
+/* Estilos para o Conteúdo da Grade */
+#gridconteudo {
+    background-color: #fff; /* Fundo branco */
+}
+
+#robo{height: 10% ;width: 10%;}
